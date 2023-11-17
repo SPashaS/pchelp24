@@ -1,0 +1,169 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.swiper-pagination-bullets {
+  display: flex;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-pagination-bullet {
+	width: 5px;
+	height: 5px;
+	border: 1px solid #000000;
+	border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+	width: 7px;
+	height: 7px;
+	background-color: #000000;
+}
+
+
+.title {
+  font-size: 2rem;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width:$mobile){
+    font-size: 4.8rem;
+  }
+
+  @media (min-width:$pc){
+      
+  }
+
+  //.title_mb
+  &_mb {
+    margin-bottom: 30px;
+
+    @media (min-width:$mobile){
+      margin-bottom: 40px;
+    }
+
+    @media (min-width:$tablet){
+      margin-bottom: 60px; 
+    }
+  }
+
+  //.title__line
+  &__line {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+
+    &::after {
+      content: "";
+      width: 230px;
+      height: 3px;
+      background-image: url("@img/decor/lines-title.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      @media (min-width:$mobile){
+        background-image: url("@img/decor/lines-title-tab.svg");
+        width: 596px;
+        height: 4px;
+      }
+
+    }
+  
+  }
+  //.title__lines
+  &__lines {
+  
+  }
+}
+
+
+.decor {
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  object-fit: cover;
+
+  // use {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   object-fit: cover;
+  // }
+
+  &__flash-drive {
+    aspect-ratio: 26 / 15;
+  }
+
+  &__headphones {
+    aspect-ratio: 76.559 / 96.276;
+  }
+
+  &__adapter {
+    aspect-ratio: 219 / 197;
+  }
+
+  &__mouse {
+    aspect-ratio: 94.52 / 31.84;
+  }
+
+  &__buttons {
+    aspect-ratio: 271 / 191;
+  }
+}
+
+
+.key {
+  position: absolute;
+  width: percent(51.331, 470);
+  aspect-ratio: 51.331 / 47.107;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background-size: cover;
+
+
+  &__back {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: blur(14px);
+    animation: 1.3s ease-in-out 0s infinite normal;
+  }
+
+  &__char {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-size: cover;
+    background-image: url("@img/decor/buttons/key.svg");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @media (min-width:$mobile){
+      font-size: 3rem;
+    }
+
+    @media (min-width:$tablet){
+      font-weight: 400; 
+    }
+  }
+}

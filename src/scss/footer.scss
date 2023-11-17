@@ -1,0 +1,44 @@
+//====================================================================================================
+.footer {
+  padding-top: 108px;
+  padding-bottom: 30px;
+
+  @media (min-width:$mobile){
+    padding-top: 80px; 
+  }
+
+  @media (min-width:$tablet){
+    padding-top: 130px;
+    padding-bottom: 90px; 
+  }
+
+  // .footer__container
+  &__container {
+
+    @media (min-width:$mobile) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  // .footer__logo
+  &__logo {
+    margin-bottom: 30px;
+
+    @media (min-width:$mobile){
+      margin-bottom: 0; 
+    }
+  }
+
+  // .footer__copy
+  &__copy {
+    font-size: 1rem;
+
+    @media (min-width:$mobile) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+//====================================================================================================
