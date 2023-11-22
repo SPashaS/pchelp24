@@ -221,10 +221,14 @@ h6 {
 @media (any-hover: hover) {
   .button:hover {
     background-color: var(--btn-color-hover);
+    font-size: 1.33em;
+    font-weight: 700;
   }
 }
 .button:active {
   background-color: var(--btn-color-active);
+  font-size: 1.33em;
+  font-weight: 700;
 }
 
 .button span:nth-child(1) {
@@ -1848,7 +1852,8 @@ body.popup-show::after {
   .promo__mouse {
     scale: -1 1;
     width: 112.83px;
-    bottom: -49px;
+    bottom: -17%;
+    rotate: 223deg;
     right: 58%;
     stroke: #FF0000;
     animation: none;
@@ -2920,9 +2925,9 @@ body.popup-show::after {
     display: block;
     flex: 1 1 auto;
     align-self: flex-end;
-    height: 5px;
+    height: 7px;
     background-image: url("../img/decor/lines-2.svg");
-    background-size: 100%;
+    background-image: url("../img/decor/lines-3.svg");
     background-repeat: no-repeat;
     order: 2;
   }
@@ -3123,7 +3128,7 @@ body.popup-show::after {
 .contacts__motherboard {
   width: 569px;
   width: 177.8125%;
-  stroke: rgba(202, 202, 202, 0.5019607843);
+  stroke: rgba(202, 202, 202, 0.5);
   right: -5%;
   top: 50%;
   transform: translateY(-50%);
