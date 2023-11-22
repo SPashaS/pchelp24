@@ -46,7 +46,7 @@ function initSliders() {
 	bildSliders();
 
 	// Перечень слайдеров
-	if (document.querySelector('.typical-breakdowns__swiper')) {
+	if (document.querySelector('.typical-breakdowns__swiper') && document.documentElement.clientWidth > 768) {
 		new Swiper('.typical-breakdowns__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -81,14 +81,14 @@ function initSliders() {
 			// 	prevEl: '.about__more .more__item_prev',
 			// },
 			breakpoints: {
-				0: {
-					slidesPerView: "auto",
-					spaceBetween: 28,
-				},
-				320: {
-					slidesPerView: "auto",
-					spaceBetween: 28,
-				},
+				// 0: {
+				// 	slidesPerView: "auto",
+				// 	spaceBetween: 28,
+				// },
+				// 320: {
+				// 	slidesPerView: "auto",
+				// 	spaceBetween: 28,
+				// },
 				768: {
 					slidesPerView: 3,
 					spaceBetween: 44,
@@ -153,8 +153,10 @@ function initSliders() {
 					slidesPerView: 2,
 					spaceBetween: 20,
 				},
-				// 992: {
-				// },
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
 				1268: {
 					slidesPerView: 4,
 					spaceBetween: 10,
@@ -167,7 +169,7 @@ function initSliders() {
 		});
 	}
 	
-	if (document.querySelector('.how-we-work__swiper')) {
+	if (document.querySelector('.how-we-work__swiper') && document.documentElement.clientWidth < 1280) {
 		new Swiper('.how-we-work__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -214,9 +216,11 @@ function initSliders() {
 					spaceBetween: 20,
 				},
 				// 992: {
+				// 	slidesPerView: 3,
+				// 	spaceBetween: 20,
 				// },
 				1268: {
-					slidesPerView: 4,
+					slidesPerView: "auto",
 					spaceBetween: 10,
 				},
 			},

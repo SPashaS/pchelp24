@@ -39,7 +39,7 @@ flsFunctions.menuInit();
 Документация:
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -60,7 +60,7 @@ flsFunctions.showMore();
 Документация по работе в шаблоне:
 Сниппет (HTML): pl
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Модуль параллакса мышью
