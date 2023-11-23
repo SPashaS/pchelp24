@@ -504,11 +504,6 @@ body.popup-show::after {
     height: 4px;
   }
 }
-@media (min-width: 1279.98px) {
-  .title__line::after {
-    width: 596px;
-  }
-}
 .title__lines {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -759,15 +754,6 @@ body.popup-show::after {
     scale: 1;
   }
 }
-@keyframes promo-adapter-pc {
-  from {
-    scale: 1;
-  }
-  to {
-    scale: 1.3;
-    translate: 7% 13%;
-  }
-}
 @keyframes promo-mouse-pc {
   from {
     scale: -1 1;
@@ -777,6 +763,22 @@ body.popup-show::after {
     translate: 5% 2%;
   }
 }
+@keyframes services-usb-pc {
+  0% {
+    scale: 1;
+  }
+  33% {
+    scale: 1.6;
+    translate: 10% -28%;
+  }
+  66% {
+    scale: 1.6;
+    translate: 10% -28%;
+  }
+  100% {
+    scale: 1;
+  }
+}
 @keyframes testimonials-head-pc {
   from {
     scale: -1 1;
@@ -784,6 +786,16 @@ body.popup-show::after {
   to {
     scale: -1.2 1.2;
     translate: 5% 5%;
+  }
+}
+@keyframes contacts-head-tab {
+  33% {
+    scale: -1.6 1.6;
+    translate: 10% -28%;
+  }
+  66% {
+    scale: -1.6 1.6;
+    translate: 10% -28%;
   }
 }
 @keyframes motherboard {
@@ -1635,18 +1647,17 @@ body.popup-show::after {
   stroke: rgb(255, 0, 0);
   rotate: 20deg;
   scale: -1 1;
-  top: 75%;
+  top: 61%;
   left: 55%;
   transform: translate(-50%, -50%);
 }
 @media (min-width: 767.98px) {
   .footer__headphones {
     width: 103.711px;
-    top: 40%;
+    top: 31%;
     left: 50%;
     scale: 1 1;
     rotate: -20deg;
-    animation: 1.3s ease-in-out alternate 0.3s infinite footer-head-tab;
   }
 }
 @media (min-width: 1279.98px) {
@@ -1929,8 +1940,8 @@ body.popup-show::after {
     width: 217px;
     top: -13%;
     right: -33%;
-    animation: 0.42s steps(2) 0s infinite alternate promo-adapter-pc;
     stroke: rgba(39, 125, 255, 0.5019607843);
+    animation: none;
   }
 }
 .promo__mouse {
@@ -2099,6 +2110,7 @@ body.popup-show::after {
     left: 13%;
     top: 15%;
     rotate: 240deg;
+    animation: 1.6s ease-in-out 0s infinite alternate services-usb-pc;
   }
 }
 
@@ -2869,10 +2881,15 @@ body.popup-show::after {
   .testimonials__headphones {
     width: 203px;
     stroke: #0038FF;
-    left: -20%;
+    left: 1%;
     scale: -1 1;
     rotate: -50deg;
-    animation-name: testimonials-head-pc;
+    animation-name: none;
+  }
+}
+@media (min-width: 1600px) {
+  .testimonials__headphones {
+    left: -20%;
   }
 }
 
@@ -3002,13 +3019,13 @@ body.popup-show::after {
     top: 98%;
     left: 68%;
     scale: -1 1;
-    rotate: 150deg;
+    rotate: 166deg;
   }
 }
-@media (min-width: 991.98px) {
+@media (min-width: 1279.98px) {
   .prices__mouse {
     width: 282px;
-    top: -30%;
+    top: -130px;
     left: 72%;
   }
 }
@@ -3307,6 +3324,7 @@ body.popup-show::after {
   .contacts__headphones {
     bottom: -79%;
     left: 83%;
+    animation: 1.3s ease-in-out alternate 0.3s infinite contacts-head-tab;
   }
 }
 .contacts__adapter {
@@ -3327,9 +3345,6 @@ body.popup-show::after {
   .contacts__adapter {
     display: none;
   }
-}
-.contacts__mouse {
-  display: none;
 }
 .swiper-horizontal {
   touch-action: pan-y;
