@@ -270,7 +270,6 @@
 								<div class="key key_f"><span class="key__char">f</span><span class="key__back"></span></div>
 
 							</div>
-
 						</div>
 					</div>
 					<div class="description__content">
@@ -576,7 +575,7 @@
 
 			<section class="page__prices prices">
 				<div class="prices__container">
-					<h3 class="prices__title title"><span class="title__line">наши услуги и цены</span></h3>
+					<h3 class="prices__title title title_mb"><span class="title__line">наши услуги и цены</span></h3>
 					<div class="prices__body">
 						<div class="prices__body-grid _hidden">
 							<ul class="prices__list">
@@ -649,10 +648,11 @@
 								</li>
 							</ul>
 						</div>
-
-
 						<div class="prices__button">
 							<button id="prices-more" class="button"><span>Показать еще</span><span>Скрыть</span></button>
+						</div>
+						<div class="prices__button-call">
+							<button class="button" data-popup="#order-call">Позвонить нам</button>
 						</div>
 					</div>
 					<svg class="prices__flash-drive decor decor__flash-drive">
@@ -666,7 +666,7 @@
 
 			<section class="page__how-we-work how-we-work">
 				<div class="how-we-work__container">
-					<h3 class="how-we-work__title title title_lines">Как мы работаем</h3>
+					<h3 class="how-we-work__title title title_mb"><span class="title__lines">Как мы работаем</span></h3>
 					<div class="how-we-work__slider-wrapper">
 						<div class="how-we-work__slider">
 							<div class="how-we-work__swiper">
@@ -704,9 +704,12 @@
 						</div>
 						<div class="how-we-work__pagging"></div>
 					</div>
-					<div class="how-we-work__button">
-						<button class="button" data-popup="#order-call">Позвонить нам</button>
-					</div>
+					<svg class="how-we-work__flash-drive decor decor__flash-drive">
+						<use xlink:href="img/decor/sprite.svg#flash-drive"></use>
+					</svg>
+					<svg class="how-we-work__adapter decor decor__adapter">
+						<use xlink:href="img/decor/sprite.svg#adapter"></use>
+					</svg>
 				</div>
 			</section>
 
@@ -733,9 +736,6 @@
 					<svg class="contacts__adapter decor decor__adapter">
 						<use xlink:href="img/decor/sprite.svg#adapter"></use>
 					</svg>
-					<svg class="contacts__mouse decor decor__mouse">
-						<use xlink:href="img/decor/sprite.svg#mouse"></use>
-					</svg>
 				</div>
 			</section>
 
@@ -760,9 +760,9 @@
 
 
 
-		<!-- <script src="../files/ScrollSmoother.min.js?_v=20231122225426"></script> -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?_v=20231122225426"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js?_v=20231122225426"></script> -->
+		<!-- <script src="../files/ScrollSmoother.min.js?_v=20231123121920"></script> -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js?_v=20231123121920"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js?_v=20231123121920"></script> -->
 	</div>
 	<div id="order-call" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -796,7 +796,7 @@
 	</div>
 
 
-	<script src="js/app.min.js?_v=20231122225426"></script>
+	<script src="js/app.min.js?_v=20231123121920"></script>
 </body>
 
 </html>

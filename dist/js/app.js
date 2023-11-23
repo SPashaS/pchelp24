@@ -4274,7 +4274,10 @@
     ye = document.querySelectorAll(".promo__monitor img");
   we(be), we(ye);
   document.querySelectorAll(".menu-item-has-children").forEach((e) => {
-    e.insertAdjacentHTML("beforeend", '<span class="menu-item__arrow"></span>');
+    e.insertAdjacentHTML(
+      "beforeend",
+      '<span class="menu-item__arrow _icon-bottom"></span>',
+    );
   }),
     document.addEventListener("click", function (e) {
       const t = e.target;
