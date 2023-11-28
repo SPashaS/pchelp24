@@ -4516,7 +4516,7 @@
             duration: 1,
             delay: 0.5,
           }),
-          gsap.from(".item-call-urgently_1 .adv-box__num", {
+          gsap.from(".item-call-urgently_1 .chart-box__num", {
             scrollTrigger: {
               trigger: ".efficiency__container",
               start: "80% 20%",
@@ -4550,7 +4550,7 @@
               start: "center 20%",
             },
             className:
-              "call-urgently__item item-call-urgently item-call-urgently_1 animation-adv-box",
+              "call-urgently__item item-call-urgently item-call-urgently_1 animation-chart-box",
             delay: 0.5,
           }),
           gsap.from(".item-call-urgently_2", {
@@ -4571,10 +4571,10 @@
               start: "center 20%",
             },
             className:
-              "call-urgently__item item-call-urgently item-call-urgently_2 animation-adv-box",
+              "call-urgently__item item-call-urgently item-call-urgently_2 animation-chart-box",
             delay: 3,
           }),
-          gsap.from(".item-call-urgently_2 .adv-box__num", {
+          gsap.from(".item-call-urgently_2 .chart-box__num", {
             scrollTrigger: {
               trigger: ".efficiency__container",
               start: "80% 20%",
@@ -4620,7 +4620,7 @@
               start: "center 20%",
             },
             className:
-              "call-urgently__item item-call-urgently item-call-urgently_3 animation-adv-box",
+              "call-urgently__item item-call-urgently item-call-urgently_3 animation-chart-box",
             delay: 1.5,
           }),
           gsap.from(".item-call-urgently_3 .ico-line", {
