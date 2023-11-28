@@ -4352,7 +4352,7 @@
           e.classList.remove("_show-sub-menu");
         });
     });
-  document.querySelector(".page-advert") &&
+  document.querySelector(".page-adv") &&
     (gsap.registerPlugin(TextPlugin, MotionPathPlugin),
     document.addEventListener("DOMContentLoaded", () => {
       if (window.matchMedia("(min-width: 1278px").matches) {
@@ -4386,13 +4386,13 @@
             0.7,
           )
           .fromTo(
-            ".promo-advert__image",
+            ".promo-adv__image",
             { y: -120, opacity: 0, transformOrigin: "top center", scale: 0.4 },
             { y: 0, opacity: 1, scale: 1, duration: 1.3 },
             1.4,
           )
           .fromTo(
-            ".promo-advert__col_1",
+            ".promo-adv__col_1",
             {
               y: -50,
               x: 0,
@@ -4405,7 +4405,7 @@
           ),
           gsap.from(".revolution__title", {
             scrollTrigger: {
-              trigger: ".promo-advert__body",
+              trigger: ".promo-adv__body",
               start: "top 10%",
               end: "center 25%",
             },
@@ -4482,11 +4482,7 @@
             delay: 0.5,
           }),
           gsap.from(".efficiency__slide", {
-            scrollTrigger: {
-              markers: !0,
-              trigger: ".revolution",
-              start: "center 10%",
-            },
+            scrollTrigger: { trigger: ".revolution", start: "center 10%" },
             scale: 0,
             opacity: 0,
             transformOrigin: "left center",
@@ -4520,7 +4516,7 @@
             duration: 1,
             delay: 0.5,
           }),
-          gsap.from(".item-call-urgently_1 .advert-box__num", {
+          gsap.from(".item-call-urgently_1 .adv-box__num", {
             scrollTrigger: {
               trigger: ".efficiency__container",
               start: "80% 20%",
@@ -4554,7 +4550,7 @@
               start: "center 20%",
             },
             className:
-              "call-urgently__item item-call-urgently item-call-urgently_1 animation-advert-box",
+              "call-urgently__item item-call-urgently item-call-urgently_1 animation-adv-box",
             delay: 0.5,
           }),
           gsap.from(".item-call-urgently_2", {
@@ -4575,10 +4571,10 @@
               start: "center 20%",
             },
             className:
-              "call-urgently__item item-call-urgently item-call-urgently_2 animation-advert-box",
+              "call-urgently__item item-call-urgently item-call-urgently_2 animation-adv-box",
             delay: 3,
           }),
-          gsap.from(".item-call-urgently_2 .advert-box__num", {
+          gsap.from(".item-call-urgently_2 .adv-box__num", {
             scrollTrigger: {
               trigger: ".efficiency__container",
               start: "80% 20%",
@@ -4624,7 +4620,7 @@
               start: "center 20%",
             },
             className:
-              "call-urgently__item item-call-urgently item-call-urgently_3 animation-advert-box",
+              "call-urgently__item item-call-urgently item-call-urgently_3 animation-adv-box",
             delay: 1.5,
           }),
           gsap.from(".item-call-urgently_3 .ico-line", {
@@ -4636,14 +4632,14 @@
             delay: 3.5,
             duration: 2,
           }),
-          gsap.from(".advert-contacts__tel", {
+          gsap.from(".adv-contacts__tel", {
             scrollTrigger: { trigger: ".cost-services", start: "center 20%" },
             text: "+",
             ease: "none",
             duration: 1.2,
           }),
           gsap.from(".footer__tel", {
-            scrollTrigger: { trigger: ".advert-contacts", start: "top 20%" },
+            scrollTrigger: { trigger: ".adv-contacts", start: "top 20%" },
             text: "+",
             ease: "none",
             duration: 1.2,
