@@ -1,16 +1,16 @@
 //====================================================================================================
 .footer {
-  padding-top: 108px;
+  padding-top: 70px;
   padding-bottom: 30px;
   position: relative;
-
+  
   @media (min-width:$mobile){
-    padding-top: 80px; 
+    padding-top: 40px; 
   }
 
-  @media (min-width:$tablet){
-    padding-top: 130px;
-    padding-bottom: 90px; 
+  @media (min-width: $pcSmall){
+    padding-top: 65px;
+    padding-bottom: 50px; 
   }
 
   // .footer__container
@@ -47,19 +47,19 @@
     stroke: rgba(255, 0, 0, 1);
     rotate: 20deg;
     scale: -1 1;
-    top: 75%;
+    top: 61%;
     left: 55%;
     transform: translate(-50%, -50%);
 
 
     @media (min-width:$mobile){
       width: 103.711px;
-      top: 40%;
+      top: 31%;
       left: 50%;
       scale: 1 1;
       rotate: -20deg;
 
-      animation: 1.3s ease-in-out alternate 0.3s infinite  footer-head-tab;
+      // animation: 1.3s ease-in-out alternate 0.3s infinite  footer-head-tab;
     }
 
     @media (min-width:$pcSmall){
@@ -70,3 +70,94 @@
 }
 
 //====================================================================================================
+
+
+
+.footer {
+
+  &_advert {
+    .footer__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      @media (min-width:$mobile){
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .footer__logo {
+      margin-bottom: 0;
+
+      @media (min-width:$mobile){
+        order: 1;
+      }
+    }
+
+    .footer__copy {
+      font-size: 1.6rem;
+
+      @media (min-width:$mobile){
+        order: 2;
+      }
+
+      @media (min-width:$pcSmall){
+        display: none;
+      }
+    }
+
+    .footer__man-image {
+      margin-bottom: 20px;
+
+      @media (min-width:$mobile){
+        order: 3;
+      }
+    }
+
+    .footer__contacts {
+      @media (min-width:$pcSmall){
+        order: 4;
+        min-width: 307.2px;
+      }
+    }
+  }
+
+  // .footer__man-image
+  &__man-image {
+    display: inline-block;
+    background-image: url("@img/advertising/footer/man.png");
+    width: 167px;
+    aspect-ratio: 167 / 204;
+
+    &::before {
+      z-index: -1;
+      width: percent(181,167);
+      rotate: 337deg;
+      top: 19%;
+      left: 84%;
+    }
+  }
+
+
+  // .footer__contacts
+  &__contacts {
+    display: none;
+    @media (min-width:$pcSmall){
+      display: grid;
+      gap: 20px;
+    }
+  }
+
+  // .footer__tel
+  &__tel {
+
+  }
+
+  // .footer__button
+  &__button {
+    width: 220px;
+    font-size: 1.6rem;
+  }
+
+}

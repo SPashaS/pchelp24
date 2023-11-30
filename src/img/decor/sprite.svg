@@ -312,15 +312,4 @@
   <path d="M38.6812 47.0582H799.749L904.741 154.17H993.658L1057.46 216.295H1115.73V309.483L1192.59 388.21M38.6812 15.9957L834.913 13.3179L894.694 78.1207H1108.19L1143.36 118.288V205.584L1178.02 240.931V329.298L1227.75 388.21V450.335M695.259 78.1207L741.978 130.606H841.444L911.774 205.584H1001.19"  stroke-opacity="0.5" stroke-width="0.5"/>
 </symbol>
 
-<defs>
-  <linearGradient id="math-gradient" x1="64.3706" y1="0.814697" x2="64.3706" y2="159.876" gradientUnits="userSpaceOnUse">
-    <stop offset="0.00520833" stop-color="#0038FF"/>
-    <stop offset="1" stop-color="#BF07C3"/>
-  </linearGradient>
-</defs>
-
-
-
-
-
 </svg>

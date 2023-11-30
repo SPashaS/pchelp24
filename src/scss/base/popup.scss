@@ -93,21 +93,39 @@ body.popup-show::after {
 	// .order-call__form
 	&__form {
 		min-width: 100%;
-		display: grid;
-		gap: 40px;
 		margin-bottom: 55px;
-
 		@media (min-width:$mobile){
 			min-width: 492px; 
 		}
 	}
 
-	// .order-call__row
+
+
+
+	// .order-call__politics-user
+	&__politics-user {
+		text-align: center;
+		font-weight: 300;
+		a {
+			color: #025199;
+		}
+	}
+
+}
+
+
+.form {
+	display: grid;
+	gap: 40px;
+
+	// .form__row
 	&__row {
 		height: 42px;
 		border-bottom: 1px solid #000000;
 		position: relative;
+		
 		input {
+			background-color: transparent;
 			outline: none;
 
 			position: absolute;
@@ -128,17 +146,6 @@ body.popup-show::after {
 
 		input {
 			min-width: 160px;
-		}
-	}
-
-
-
-	// .order-call__politics-user
-	&__politics-user {
-		text-align: center;
-		font-weight: 300;
-		a {
-			color: #025199;
 		}
 	}
 

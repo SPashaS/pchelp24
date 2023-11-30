@@ -46,6 +46,10 @@
 		color: #3C3C3C;
 		text-transform: uppercase;
 
+    &_low {
+      text-transform: lowercase;
+    }
+
     @media (min-width:$mobile){
       font-size: 1.5rem;
     }
@@ -86,10 +90,6 @@
     font-size: 4.8rem;
   }
 
-  @media (min-width:$pc){
-      
-  }
-
   //.title_mb
   &_mb {
     margin-bottom: 30px;
@@ -98,7 +98,7 @@
       margin-bottom: 40px;
     }
 
-    @media (min-width:$tablet){
+    @media (min-width:$pcSmall){
       margin-bottom: 60px; 
     }
   }
@@ -120,16 +120,73 @@
 
       @media (min-width:$mobile){
         background-image: url("@img/decor/lines-title-tab.svg");
-        width: 596px;
+        width: 509px;
         height: 4px;
       }
+
 
     }
   
   }
   //.title__lines
   &__lines {
-  
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    grid-template-columns: 30px auto 30px;
+
+    @media (min-width:$mobile){
+      grid-template-columns: 70px auto 70px;
+      gap: 20px;
+    }
+
+    @media (min-width:$tablet){
+      grid-template-columns: 130px auto 130px;
+    }
+
+    @media (min-width:$pcSmall){
+      grid-template-columns: 174px auto 174px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      
+      background-size: 100%;
+      background-repeat: no-repeat;
+
+      // @media (min-width:$mobile){
+      //   background-image: url("@img/decor/lines-title-tab.svg");
+      //   width: 596px;
+      //   height: 4px;
+      // }
+
+      @media (min-width:$mobile){
+        background-size: 100%;
+        height: 10px;
+      }
+    }
+
+    &::before {
+      background-image: url("@img/decor/lines-title-1-mob.svg");
+      @media (min-width:$mobile){
+        background-image: url("@img/decor/lines-title-1.svg");
+      }
+
+    }
+
+    &::after {
+      background-image: url("@img/decor/lines-title-2-mob.svg");
+      @media (min-width:$mobile){
+        background-image: url("@img/decor/lines-title-2.svg");
+      }
+
+    }
   }
 }
 
@@ -246,9 +303,9 @@
       font-size: 3rem;
     }
 
-    @media (min-width:$tablet){
-      font-weight: 400; 
-    }
+    // @media (min-width:$tablet){
+    //   font-weight: 400; 
+    // }
   }
 }
 
@@ -310,7 +367,6 @@
     scale: 1;
   }
 }
-
 
 
 @keyframes promo-usb-tab {
@@ -393,16 +449,27 @@
   }
 }
 
-@keyframes promo-usb-pc {
-  from {
-    scale: 1;
-  }
+// @keyframes promo-adapter-pc {
+//   from {
+//     scale: 1;
+//   }
 
-  to {
-    scale: 2;
-    translate: -5% -165%;
-  }
-}
+//   to {
+//     scale: 1.3;
+//     translate: 7% 13%;
+//   }
+// }
+
+// @keyframes promo-usb-pc {
+//   from {
+//     scale: 1;
+//   }
+
+//   to {
+//     scale: 2;
+//     translate: -5% -165%;
+//   }
+// }
 
 @keyframes promo-mouse-pc {
   from {
@@ -414,6 +481,24 @@
     translate: 5% 2%;
   }
 }
+@keyframes services-usb-pc {
+  0% {
+    scale: 1;
+  }
+  33% {
+    scale: 1.6;
+    translate: 10% -28%;
+    
+  }
+  66% {
+    scale: 1.6;
+    translate: 10% -28%;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 
 @keyframes testimonials-head-pc{
   from {
@@ -427,6 +512,18 @@
 }
 
 
+@keyframes contacts-head-tab {
+  33% {
+    scale: -1.6 1.6;
+    translate: 10% -28%;
+    
+  }
+  66% {
+    scale: -1.6 1.6;
+    translate: 10% -28%;
+  }
+}
+
 
 @keyframes motherboard {
   33% {
@@ -437,6 +534,21 @@
   }
 }
 @keyframes bolb {
+  0% {
+		opacity: 0.39;
+  }
+  33% {
+		opacity: 0.59;
+  }
+  66% {
+		opacity: 0.75;
+  }
+  100% {
+		opacity: 1;
+  }
+}
+
+@keyframes bolb-stack {
   0% {
 		opacity: 0.39;
   }

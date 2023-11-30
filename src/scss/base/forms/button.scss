@@ -29,16 +29,24 @@
 	// 	width: 100%;
 	// 	max-width: 100%;
 	// }
+	// font-size: 2.4rem;
 
-	@media (any-hover: hover) {
-		&:hover {
-			background-color: var(--btn-color-hover);
+	// @media (min-width:$mobile){
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--btn-color-hover);
+				font-size: 1.33em;
+				font-weight: 700;
+			}
 		}
-	}
+	
+		&:active {
+			background-color: var(--btn-color-active);
+			font-size: 1.33em;
+			font-weight: 700;
+		}
+	// }
 
-	&:active {
-		background-color: var(--btn-color-active);
-	}
 }
 
 

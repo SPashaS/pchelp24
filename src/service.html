@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Service"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<div class="page__promo promo">
+				<div class="promo__container">
+					<div class="promo__body">
+
+						<div class="promo__content">
+							<div class="promo__text">
+								<p>Установка и настройка программ</p>
+							</div>
+							<div class="promo__button">
+								<button class="button" data-popup="#order-call">Позвонить нам</button>
+							</div>
+						</div>
+
+						<div class="promo__computer">
+							<div class="promo__computer-image">
+								<div class="promo__monitor">
+									<img src="@img/promo/monitor/1.jpg" alt="1">
+
+								</div>
+							</div>
+
+
+							<svg class="promo__flash-drive decor decor__flash-drive">
+								<use xlink:href="@img/decor/sprite.svg#flash-drive"></use>
+							</svg>
+							<svg class="promo__headphones decor decor__headphones">
+								<use xlink:href="@img/decor/sprite.svg#headphones"></use>
+							</svg>
+							<svg class="promo__adapter decor decor__adapter">
+								<use xlink:href="@img/decor/sprite.svg#adapter"></use>
+							</svg>
+							<svg class="promo__mouse decor decor__mouse">
+								<use xlink:href="@img/decor/sprite.svg#mouse"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="promo__service-content">
+						Наши услуги включают установку и настройку различных программных продуктов, чтобы помочь вам максимально эффективно использовать свою технику. Мы готовы помочь вам с установкой программного обеспечения на компьютеры, ноутбуки, мобильные устройства и другие устройства.<br><br>Наша команда профессионалов имеет богатый опыт в установке и настройке различных программ, включая операционные системы, офисные программы, антивирусное ПО и другие приложения. Мы гарантируем, что ваши программы будут правильно установлены и настроены в соответствии с вашими потребностями и предпочтениями.<br><br>Мы также обеспечиваем совместимость программного обеспечения с вашей технической инфраструктурой, чтобы обеспечить плавное функционирование всех приложений. Мы проследим за обновлениями программных продуктов и предложим вам советы по эффективному использованию программ, чтобы вы смогли получить максимум от своих инструментов.<br><br>Если у вас возникнут проблемы с установкой или настройкой программного обеспечения, наши профессионалы будут рады вам помочь. Мы предлагаем быстрое и качественное обслуживание, чтобы вы могли сосредоточиться на своих задачах, вместо того чтобы тратить время на сложную установку и настройку программ.<br><br>Свяжитесь с нами уже сегодня, чтобы получить помощь с установкой и настройкой программного обеспечения. Мы с удовольствием поможем вам сделать вашу технику более продуктивной и эффективной.<br><br> 
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

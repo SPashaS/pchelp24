@@ -40,13 +40,19 @@ function bildSliders() {
 	}
 }
 // Инициализация слайдеров
+
+
 function initSliders() {
 	// Добавление классов слайдера
 	// при необходимости отключить
-	bildSliders();
+
+	// bildSliders();
 
 	// Перечень слайдеров
+
+
 	if (document.querySelector('.typical-breakdowns__swiper') && document.documentElement.clientWidth > 768) {
+		bildSliders();
 		new Swiper('.typical-breakdowns__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -108,6 +114,7 @@ function initSliders() {
 	}
 
 	if (document.querySelector('.testimonials__swiper')) {
+		bildSliders();
 		new Swiper('.testimonials__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -170,6 +177,7 @@ function initSliders() {
 	}
 	
 	if (document.querySelector('.how-we-work__swiper') && document.documentElement.clientWidth < 1280) {
+		bildSliders();
 		new Swiper('.how-we-work__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -230,6 +238,199 @@ function initSliders() {
 			}
 		});
 	}
+
+	if (document.querySelector('.efficiency__swiper') && document.documentElement.clientWidth < 1280) {
+		bildSliders();
+		new Swiper('.efficiency__slider', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			//modules: [Navigation, Pagination],
+			modules: [Pagination],
+	
+			// effect: 'fade',
+			// autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+	
+			// observer: true,
+			// observeParents: true,
+			// slidesPerView: "auto",
+			// spaceBetween: 0,
+			autoHeight: true,
+			speed: 800,
+			// touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+			// Dotts
+			pagination: {
+				el: '.efficiency__pagging',
+				clickable: true,
+			},
+			// Arrows
+			// navigation: {
+			// 	prevEl: '.testimonials__arrows .testimonials__arrow_prev',
+			// 	nextEl: '.testimonials__arrows .testimonials__arrow_next',
+
+			// },
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 5,
+				},
+				// 320: {
+				// },
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+					// centeredSlides: true,
+				},
+				// 992: {
+				// 	slidesPerView: 3,
+				// 	spaceBetween: 20,
+				// },
+				1268: {
+					slidesPerView: "auto",
+					spaceBetween: 10,
+				},
+			},
+
+			on: {
+
+			}
+		});
+	}
+
+	if (document.querySelector('.we-work-how__swiper') && document.documentElement.clientWidth < 1280) {
+		bildSliders();
+		new Swiper('.we-work-how__slider', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			//modules: [Navigation, Pagination],
+			modules: [Pagination],
+	
+			// effect: 'fade',
+			// autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+	
+			// observer: true,
+			// observeParents: true,
+			// slidesPerView: "auto",
+			// spaceBetween: 0,
+			// autoHeight: true,
+			speed: 800,
+			// touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+			// Dotts
+			pagination: {
+				el: '.we-work-how__pagging',
+				clickable: true,
+			},
+			// Arrows
+			// navigation: {
+			// 	prevEl: '.testimonials__arrows .testimonials__arrow_prev',
+			// 	nextEl: '.testimonials__arrows .testimonials__arrow_next',
+
+			// },
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					// spaceBetween: 5,
+				},
+				// 320: {
+				// },
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+					// centeredSlides: true,
+				},
+				// 992: {
+				// 	slidesPerView: 3,
+				// 	spaceBetween: 20,
+				// },
+				1268: {
+					slidesPerView: "auto",
+					spaceBetween: 10,
+				},
+			},
+
+			on: {
+
+			}
+		});
+	}
+
+	if (document.querySelector('.successfull__swiper') && document.documentElement.clientWidth < 1280) {
+		bildSliders();
+		new Swiper('.successfull__slider', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			//modules: [Navigation, Pagination],
+			modules: [Pagination],
+	
+			// effect: 'fade',
+			// autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+	
+			// observer: true,
+			// observeParents: true,
+			// slidesPerView: "auto",
+			// spaceBetween: 0,
+			autoHeight: true,
+			speed: 800,
+			// touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+			// Dotts
+			pagination: {
+				el: '.successfull__pagging',
+				clickable: true,
+			},
+			// Arrows
+			// navigation: {
+			// 	prevEl: '.testimonials__arrows .testimonials__arrow_prev',
+			// 	nextEl: '.testimonials__arrows .testimonials__arrow_next',
+
+			// },
+			breakpoints: {
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 5,
+				},
+				// 320: {
+				// },
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+					// centeredSlides: true,
+				},
+				// 992: {
+				// 	slidesPerView: 3,
+				// 	spaceBetween: 20,
+				// },
+				1268: {
+					slidesPerView: "auto",
+					spaceBetween: 10,
+				},
+			},
+
+			on: {
+
+			}
+		});
+	}
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
@@ -265,6 +466,14 @@ function initSlidersScroll() {
 }
 
 window.addEventListener("load", function (e) {
+	// Запуск инициализации слайдеров
+	initSliders();
+	// Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
+	//initSlidersScroll();
+});
+
+
+window.addEventListener("resize", function (e) {
 	// Запуск инициализации слайдеров
 	initSliders();
 	// Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
