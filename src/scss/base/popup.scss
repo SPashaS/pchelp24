@@ -117,11 +117,28 @@ body.popup-show::after {
 .form {
 	display: grid;
 	gap: 40px;
+	min-width: 290px;
+
+	@media (min-width:$mobile){
+		min-width: 492px;
+	}
 
 	// .form__row
 	&__row {
+		padding: 10px;
+		display: grid;
+		gap: 20px;
+	}
+
+	&__label {
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+	}
+
+	// .form__input
+	&__input {
 		height: 42px;
-		border-bottom: 1px solid #000000;
+		border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
 		position: relative;
 		
 		input {

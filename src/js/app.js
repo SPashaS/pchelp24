@@ -78,7 +78,7 @@ import * as flsForms from "./files/forms/forms.js";
 flsForms.formFieldsInit();
 
 /* Oтправка формы со встроенной валидацией полей. false - отключит валидацию */
-flsForms.formSubmit(true);
+// flsForms.formSubmit(true);
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();

@@ -87,7 +87,7 @@
         justify-content: space-between;
       }
     }
-    .footer__logo {
+    .footer__left-block {
       margin-bottom: 0;
 
       @media (min-width:$mobile){
@@ -160,4 +160,16 @@
     font-size: 1.6rem;
   }
 
+  &__left-block {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__link {
+    color: #0879CF;
+  }
+
 }
+
+
+
